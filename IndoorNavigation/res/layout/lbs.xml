@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#DEE0DE"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/title_bg" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="附近商铺"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/loc_title_back"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/title_back" />
+        </RelativeLayout>
+  
+
+        <ScrollView
+            android:id="@+id/lbs_display_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dip"
+                    android:background="@drawable/circle_listview_single_item_bg"
+                    android:minHeight="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/lbs_discount_icon"
+                        android:drawablePadding="5dip"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:text="附近共有0个优惠活动"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dip"
+                        android:src="@drawable/right_arrow_style" />
+                </RelativeLayout>
+
+                <com.qjc.IndoorNavigation.utils.MyListView
+                    android:id="@+id/lbs_display"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000" >
+                </com.qjc.IndoorNavigation.utils.MyListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/lbs_nodisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="此地无人问津"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottombg"
+            android:orientation="horizontal"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <Button
+                android:id="@+id/lbs_checkin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_leftred"
+                android:gravity="center"
+                android:text="道友签到"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+
+            <Button
+                android:id="@+id/lbs_nearby_people"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_white"
+                android:text="志同道合"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+
+            <Button
+                android:id="@+id/lbs_nearby_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:layout_weight="1"
+                android:background="@drawable/bottomtabbutton_rightwhite"
+                android:text="洞天福地"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

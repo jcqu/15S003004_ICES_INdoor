@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/BrandsLayout"
+    android:background="#DEE0DE" 
+    android:orientation="vertical">
+     <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:id="@+id/btitle"
+            android:background="@drawable/title_bg" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热门品牌"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/brand_title_back"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/title_back" />
+     </RelativeLayout>  
+    <LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_below="@id/btitle">
+	<TableLayout
+			   	android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent"	
+			    android:id="@+id/btableLayout_travel" >
+		   	   				
+  	   	 <TableRow 
+		   	     android:layout_width="fill_parent" 
+			     android:layout_height="fill_parent"
+			     android:paddingTop="5dip"
+			     android:layout_marginLeft="5dip"
+			     android:layout_marginRight="5dip">
+		   	     <!-- 1 -->
+		   	     <LinearLayout 
+		   	        android:layout_width="0dip" 
+			     	android:layout_height="fill_parent"
+			     	android:orientation="vertical"
+			     	android:padding="3dip"
+			     	android:layout_weight="1"
+		   	         >
+
+		   	         <TextView
+		   	             android:padding="3dp"
+		   	             android:id="@+id/bltview1"
+		   	             android:onClick="click"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="0dp"
+		   	             android:layout_weight="1"
+		   	             android:background="@drawable/logo_adidas"/>
+
+		   	         <TextView
+		   	             android:padding="3dp"
+		   	             android:id="@+id/bltview2"
+		   	             android:onClick="click"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="0dp"
+		   	             android:layout_weight="1"
+		   	             android:background="@drawable/logo_du361"/>
+
+		   	          <TextView
+		   	              android:padding="3dp"
+		   	              android:id="@+id/bltview3"
+		   	              android:onClick="click"
+		   	              android:layout_width="fill_parent"
+		   	              android:layout_height="0dp"
+		   	              android:layout_weight="1"
+		   	              android:background="@drawable/logo_nike" />
+		   	          
+		   	           <TextView
+		   	              android:padding="3dp"
+		   	              android:id="@+id/bltview4"
+		   	              android:onClick="click"
+		   	              android:layout_width="fill_parent"
+		   	              android:layout_height="0dp"
+		   	              android:layout_weight="1"
+		   	              android:background="@drawable/logo_tongrentang" />
+		   	     
+		   	     </LinearLayout>
+		   	     <!-- 2 -->
+		   	    <LinearLayout 
+		   	        android:layout_width="0dip" 
+			     	android:layout_height="fill_parent"
+			     	android:orientation="vertical"
+			     	android:padding="3dip"
+			     	android:layout_weight="1"
+		   	         >
+
+		   	           <TextView
+		   	             android:padding="3dp"
+		   	             android:id="@+id/bctview1"
+		   	             android:onClick="click"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="0dp"
+		   	             android:layout_weight="1"
+		   	             android:background="@drawable/logo_belle"/>
+
+		   	         <TextView
+		   	             android:padding="3dp"
+		   	             android:id="@+id/bctview2"
+		   	             android:onClick="click"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="0dp"
+		   	             android:layout_weight="1"
+		   	             android:background="@drawable/logo_yonghedoujiang"/>
+
+		   	          <TextView
+		   	              android:padding="3dp"
+		   	              android:id="@+id/bctview3"
+		   	              android:onClick="click"
+		   	              android:layout_width="fill_parent"
+		   	              android:layout_height="0dp"
+		   	              android:layout_weight="1"
+		   	              android:background="@drawable/logo_zhengongfu" />
+		   	          
+		   	          <TextView
+		   	              android:padding="3dp"
+		   	              android:id="@+id/bctview3"
+		   	              android:onClick="click"
+		   	              android:layout_width="fill_parent"
+		   	              android:layout_height="0dp"
+		   	              android:layout_weight="1"
+		   	              android:background="@drawable/logo_zippo" />
+		   	          
+		   	     </LinearLayout>
+		   	      <!-- 3 -->
+		   	      <LinearLayout 
+		   	        android:layout_width="0dip" 
+			     	android:layout_height="fill_parent"
+			     	android:orientation="vertical"
+			     	android:padding="3dip"
+			     	android:layout_weight="1"
+		   	         >
+
+		   	         <TextView
+		   	             android:padding="3dp"
+		   	             android:id="@+id/brtview1"
+		   	             android:onClick="click"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="0dp"
+		   	             android:layout_weight="1"
+		   	             android:background="@drawable/logo_bishengke"/>
+
+		   	         <TextView
+		   	             android:padding="3dp"
+		   	             android:id="@+id/brtview2"
+		   	             android:onClick="click"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="0dp"
+		   	             android:layout_weight="1"
+		   	             android:background="@drawable/logo_quchenshi"/>
+
+		   	          <TextView
+		   	              android:padding="3dp"
+		   	              android:id="@+id/brtview3"
+		   	              android:onClick="click"
+		   	              android:layout_width="fill_parent"
+		   	              android:layout_height="0dp"
+		   	              android:layout_weight="1"
+		   	              android:background="@drawable/logo_guomeidianqi" />
+		   	          
+		   	           <TextView
+		   	              android:padding="3dp"
+		   	              android:id="@+id/bltview3"
+		   	              android:onClick="click"
+		   	              android:layout_width="fill_parent"
+		   	              android:layout_height="0dp"
+		   	              android:layout_weight="1"
+		   	              android:background="@drawable/logo_puma" />
+		   	     </LinearLayout>
+		   	 </TableRow>
+		  </TableLayout>
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff1f1f1"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/title"
+            style="@style/title_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title_text"
+                style="@style/title_info"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/help" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/title_back"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/title_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip" 
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal"
+            android:screenOrientation="portrait" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/xValue"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBarX"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </ProgressBar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal"
+            android:screenOrientation="portrait" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/yValue"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBarY"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </ProgressBar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal"
+            android:screenOrientation="portrait" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/zValue"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBarZ"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </ProgressBar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutOfXYAcceleration"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:screenOrientation="portrait" >
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

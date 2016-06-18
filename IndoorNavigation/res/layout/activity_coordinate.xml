@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextViewCap"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="方向值："
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBarCap"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_ampli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="振幅："
+            android:width="90dp" />
+
+        <SeekBar
+            android:id="@+id/seekBarAmplitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="9"
+            android:progress="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="步数："
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewStepValue"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/default_tv_steps_counter"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mapLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:background="#99ffffff"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

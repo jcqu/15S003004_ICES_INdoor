@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/title"
+            style="@style/title_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title_text"
+                style="@style/title_info"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/help" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/title_down"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/title_back1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/helpbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/login_tab_normal"
+            android:text="@string/capname"
+            android:textSize="16.0sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/login_tab_normal"
+            android:text="@string/step"
+            android:textSize="16.0sp" >
+        </Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/help_bg"
+            android:orientation="vertical"
+            android:paddingBottom="20dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" >
+
+            <RelativeLayout
+                android:id="@+id/dial_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" >
+
+                <TextView
+                    android:id="@+id/servicPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/servicPhone"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/servicPhone"
+                    android:text="@string/Phone"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dip"
+                android:text="@string/servic"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sendMail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dip"
+                android:text="@string/sendMail"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dip"
+                android:text="@string/servicTime"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

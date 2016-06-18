@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#fff1f1f1</color>
+    <color name="little_gravy">#c0c0c0</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="dark_gray">#ff585858</color>
+    <color name="gray">#ff333333</color>
+    <color name="lighter_gray">#ff666666</color>
+    <color name="blue">#ff124e96</color>
+    <color name="little_blue">#0080ff</color>
+    <color name="color_hei">#ff000000</color>
+    <color name="color_zhonghui">#ff798089</color>
+    <color name="text_color">#ff000000</color>
+    <color name="background_circle_color">#99CFDBEC</color>
+    <color name="circle_color">#ff627AAD</color>
+
+</resources>
